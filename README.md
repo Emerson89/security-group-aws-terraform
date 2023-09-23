@@ -15,7 +15,7 @@ Terraform module create security group aws
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.9 |
 
-## Modules
+## Usage
 
 ```hcl
 module "sg" {
