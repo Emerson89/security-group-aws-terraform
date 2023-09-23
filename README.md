@@ -1,4 +1,4 @@
-# terraform-aws-security-group
+# security-group-aws-terraform
 
 Terraform module create security group aws
 
@@ -19,7 +19,7 @@ Terraform module create security group aws
 
 ```hcl
 module "sg" {
-  source      = "github.com/Emerson89/terraform-aws-security-group.git?ref=v1.0.0"
+  source      = "github.com/Emerson89/security-group-aws-terraform.git?ref=v1.0.0"
   sgname      = "sgtest"
   environment = "hml"
   vpc_id      = "vpc-abcabcabc"
