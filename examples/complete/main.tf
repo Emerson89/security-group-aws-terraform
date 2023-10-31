@@ -1,3 +1,5 @@
+provider "aws" {}
+
 locals {
   tags = {
     Environment = "hml"
@@ -10,7 +12,6 @@ module "sg" {
   source      = "github.com/Emerson89/security-group-aws-terraform.git?ref=v1.0.0"
   sgname      = local.sgname
   environment = local.environment
-  vpc_id      = "vpc-abcabcabc"
 
   rules_security_group = {
 
