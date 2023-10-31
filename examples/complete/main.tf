@@ -1,4 +1,3 @@
-provider "aws" {}
 
 locals {
   tags = {
@@ -13,7 +12,7 @@ module "sg" {
   sgname      = local.sgname
   environment = local.environment
   vpc_id      = var.vpc_id
-  
+
   rules_security_group = {
 
     ## Rule ingress cidr_block
