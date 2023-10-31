@@ -1,5 +1,3 @@
-provider "aws" {}
-
 ### SEGURITY_GROUP
 locals {
   rules_security_group = merge(
