@@ -2,7 +2,7 @@ provider "aws" {}
 
 module "sg" {
   source      = "github.com/Emerson89/security-group-aws-terraform.git?ref=v1.0.0"
-  sgname      = "sgtest"
+  sgname      = var.sgname
   environment = "hml"
   vpc_id      = var.vpc_id
 
